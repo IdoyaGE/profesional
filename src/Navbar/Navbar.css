@@ -1,0 +1,73 @@
+.navbar{
+    background: #233d6e;
+    height:60px;
+    display:flex;
+    justify-content: space-between; /*Elementos en forma horizontal*/
+    align-items:center;
+    font-family: 'Golos Text', sans-serif;
+}
+
+.nav_logo{
+    font-weight: bold;
+    font-size: 20px;
+    margin:15px;
+    color:#fdfdff;
+   
+}
+.nav_items a {
+    margin:15px;
+    color:#fdfdff;
+    position:relative;
+    text-decoration:none;
+}
+.nav.toggle{
+    display:none;
+}
+
+/*Versión móvil con media queries*/
+
+@media (max-width: 768px) {
+
+    .nav_items {
+        position:absolute;
+        top:60px;
+        left:0;
+        background:#233d6e;
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        height:-webkit-fill-available;
+        transform:translateX(-100%);/*para ocultarlo con la hamburguesa*/
+        transition: 0.3s ease all;
+    }
+    .nav_items.open{
+        transform:translateX(0) !important;/*para visualizar los items cuando le demos a la hamburguesa*/
+    }
+    .nav.toggle{
+        display:flex !important;
+        flex-direction:column;
+        margin:15px;
+        background-color:#fdfdff;
+        width:50px;
+        height: 50px;
+    }
+    .nav.toggle span{
+        width: 30px;
+        height:4px;
+        background: #fdfdff;
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition:all 0.2s linear;
+    }
+    /*Con la clase open doy animación a las tres rayitas*/
+    .nav_toggle.open > span{ /*primera rayita la mueve 45 grados*/
+        transform:rotate(45deg) translate(0px,0px);
+    }
+    .nav_toggle.open >span:nth-child(2){/*segunda rayita la esconde*/
+        display:none;
+    }
+    .nav_toggle.open > span:nth-child(3){/*tercera rayita la mueve 45 grados hacia el otro lado*/
+        transform:rotate(-45deg) translate (-5px, 1px);
+    }
+}
