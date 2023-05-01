@@ -1,3 +1,4 @@
+//Importo React, las imágenes y el estilo CSS 
 import React from 'react';
 import img7 from "../image/fb.jpg";
 import img8 from "../image/inst.jpg";
@@ -5,7 +6,7 @@ import img9 from "../image/lin.jpg";
 import img10 from "../image/tw.jpg";
 import './Footer.css';
 
-
+//Variable footer que devuelve el menú, suscripción a la newsletter y links a las redes sociales
 
 const Footer = () => {
     return (
@@ -35,6 +36,10 @@ const Footer = () => {
       
           <div class="redessociales">
             <p>&copy; 2023 Arkabaia</p>
+            <p>Email: igearkabaia@gmail.com</p>
+            <p>Móvil: 652705481</p>
+
+
             <ul class="list-unstyled d-flexiconosredes">
               <li class="facebook"><img src = {img7} id="iconos" alt="Logo facebook" width = "75px" height ="75px"/><a href="https://www.facebook.com/public/Idoya-Garcia"></a></li>
               <li class="instagram"><img src = {img8} id="iconos" alt="Logo instagram" width = "75px" height ="75px"/><a href="https://www.instagram.com/igetxe/"></a></li>

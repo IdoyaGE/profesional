@@ -1,5 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; // Importo React u useState (Hook que permite cambiar el estado a un componente de la función)
 import "./Navbar.css";
+//Componente React para una barra de navegación
+//Función Navbar: se declara inicialmente false y con ShowNav se convierte en true
+//El componente devuelve un contenedor con logo y cuatro enlaces
+//Con el toogle oculto la barra de navegación y se activa con un click mostrando la lista desplegable
 
 function Navbar() {
   const [showNav, setShowNav] = useState(false);
@@ -34,11 +38,11 @@ function Navbar() {
           </li>
           <li className="navbar-item">
             <a className="navbar-link" href="/Quienes somos">
-              Acerca
+              Quienes somos
             </a>
           </li>
           <li className="navbar-item">
-            <a className="navbar-link" href="/Contacto">
+            <a className="navbar-link" href="/Form">
               Contacto
             </a>
           </li>
@@ -51,37 +55,3 @@ function Navbar() {
 export default Navbar;
 
 
-
-/*import React, {useState} from 'react';//hook useState
-import "./Navbar.css";
-// Importo React al componente Navbar 
-const Navbar = () => {
-    const [isOpen, setIsOpen]=useState(false) //Creo una constante que es un array con un estado que importamos en React
-    //Añado un onclick en toggle para que cambie de estado al hacer click en la hamburguesa y agrego una función con la variable isOpen
-    //Agrego a nav_items y a nav_toggle la clase open 
-    return(
-        <div className="navbar">
-            <div className="nav_logo">Arkabaia</div>
-            <div className={`nav_items ${isOpen &&"open"}`} onClick={() =>setIsOpen(!isOpen)}>
-                <div className="nav_toggle">
-                <span className="hamburger"></span>
-                <span className="hamburger"></span>
-                <span className="hamburger"></span>
-                </div>
-
-                <a href="#">Quienes somos</a>
-                <a href="#">Servicios</a>
-                <a href="#">Blog</a>
-                <a href="#">Contacto</a>
-                
-            </div>
-            <div className={`nav_toggle ${isOpen &&"open"}`} onClick={ () => setIsOpen(!isOpen)}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    )
-}
-
-export default Navbar;*/

@@ -1,4 +1,128 @@
 .navbar {
+  background-color: #233d6e;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-icon span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-icon span:first-child {
+  top: 0;
+}
+
+.navbar-icon span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbar-icon span:last-child {
+  bottom: 0;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px; /* o la distancia que desees del borde derecho */
+  background-color: #233d6e;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+  z-index: 100; /* asegúrate de que el z-index sea mayor que el del carrusel */
+  display: block;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  width: 25%; /* Para que los links ocupen todo el ancho del menú */
+  border-radius: 15px;
+}
+
+
+
+.navbar-menu.active {
+  height: 200px; /* o la altura que desees */
+}
+
+.navbar-item {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-link:hover {
+  color: #ffc107;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px; /* o la distancia que desees del borde derecho */
+  background-color: #233d6e;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out;
+  z-index: 100; /* asegúrate de que el z-index sea mayor que el del carrusel */
+}
+
+/* Establece la posición del carrusel como relative */
+.carousel-container {
+  position: relative;
+}
+
+/* Ajusta el z-index del carrusel para que esté por debajo del menú de navegación */
+.carousel {
+  z-index: 50;
+}
+
+
+/*.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,4 +198,4 @@
 
 #menu{
   background-color: #233d6e;
-}
+}*/

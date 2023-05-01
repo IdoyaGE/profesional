@@ -1,5 +1,12 @@
-import { Field, Form, Formik, ErrorMessage } from "formik";
+import { Field, Form, Formik, ErrorMessage } from "formik"; //instalada la librería de React formik 
 import "./AppForm.css";
+
+//Función aplicación formulario con tres campos: nombre, email y mensaje
+//Objeto InitialValues para los valores inciales de los campos
+//Función Validate para validar que los datos son correctos (expresión regular)
+//Función OnSubmit para registrar los valores en consola
+//Componentes Field y ErrorMessage para renderizar los campos y mensajes de error 
+//Atributo htmlFor para asociar cada etiqueta (label) a su campo correspondiente
 
 function AppForm() {
   return (
