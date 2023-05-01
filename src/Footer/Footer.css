@@ -1,0 +1,95 @@
+.footer {
+    font-family: 'Golos Text', sans-serif;
+    background-color: #f3f3f3;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: #495057;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #212529;
+    text-decoration: underline;
+  }
+  
+  .footernavbar {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footernav-item {
+    margin-right: 10px;
+  }
+  
+  .newsletter {
+    margin-top: 20px;
+  }
+  
+  .newsletter h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Golos Text', sans-serif;
+  }
+  
+  .newsletter p {
+    margin-bottom: 20px;
+  }
+  
+  .newsletter1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .subscribe {
+    background-color: #f3f3f3;
+    border: none;
+    color:  #212529;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    font-family: 'Golos Text', sans-serif;
+  }
+  
+  .subscribe:hover {
+    background-color:  #f3f3f3;
+  }
+  .redessociales {
+    margin-top: 20px;
+  }
+  
+  .redessociales p {
+    margin-bottom: 10px;
+  }
+  
+  .list-unstyled {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .d-flexiconosredes {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .d-flexiconosredes li {
+    margin-right: 10px;
+  }
+  
+  #iconos {
+    margin-right: 5px;
+  }
+  

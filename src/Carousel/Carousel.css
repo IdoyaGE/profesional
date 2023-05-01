@@ -18,8 +18,10 @@
   .carousel-dots {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: 20px;
-  }
+     }
   
   .carousel-dots button {
     border: none;
@@ -28,6 +30,7 @@
     margin: 0 5px;
     cursor: pointer;
     transition: opacity 0.2s ease-in-out;
+    flex: 0 0 auto;
   }
   
   .carousel-dots button:focus {
@@ -35,7 +38,7 @@
   }
   
   .carousel-dots button.active {
-    opacity: 0.5;
+    opacity: 1;
   }
   .main-slide div {
     transition: transform 0.5s ease-in-out;

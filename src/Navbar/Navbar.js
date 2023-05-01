@@ -23,22 +23,22 @@ function Navbar() {
         </div>
         <ul className={`navbar-menu ${showNav ? "active" : ""}`}>
           <li className="navbar-item">
-            <a className="navbar-link" href="/">
+            <a className="navbar-link" href="/Inicio">
               Inicio
             </a>
           </li>
           <li className="navbar-item">
-            <a className="navbar-link" href="/servicios">
+            <a className="navbar-link" href="/Servicios">
               Servicios
             </a>
           </li>
           <li className="navbar-item">
-            <a className="navbar-link" href="/acerca">
+            <a className="navbar-link" href="/Quienes somos">
               Acerca
             </a>
           </li>
           <li className="navbar-item">
-            <a className="navbar-link" href="/contacto">
+            <a className="navbar-link" href="/Contacto">
               Contacto
             </a>
           </li>
