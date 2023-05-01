@@ -1,73 +1,77 @@
-.navbar{
-    background: #233d6e;
-    height:60px;
-    display:flex;
-    justify-content: space-between; /*Elementos en forma horizontal*/
-    align-items:center;
-    font-family: 'Golos Text', sans-serif;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #233d6e;
+  color: #fff;
+  padding: 0 20px;
+  font-family: "Golos, sans-serif";
+  padding-top: 30px;
+  padding-bottom: 30px
 }
 
-.nav_logo{
-    font-weight: bold;
-    font-size: 20px;
-    margin:15px;
-    color:#fdfdff;
-   
-}
-.nav_items a {
-    margin:15px;
-    color:#fdfdff;
-    position:relative;
-    text-decoration:none;
-}
-.nav.toggle{
-    display:none;
+.navbar-container {
+  display: flex;
+  align-items: center;
 }
 
-/*Versión móvil con media queries*/
+.navbar-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+}
 
-@media (max-width: 768px) {
+.navbar-toggle {
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+}
 
-    .nav_items {
-        position:absolute;
-        top:60px;
-        left:0;
-        background:#233d6e;
-        display:flex;
-        flex-direction:column;
-        width:100%;
-        height:-webkit-fill-available;
-        transform:translateX(-100%);/*para ocultarlo con la hamburguesa*/
-        transition: 0.3s ease all;
-    }
-    .nav_items.open{
-        transform:translateX(0) !important;/*para visualizar los items cuando le demos a la hamburguesa*/
-    }
-    .nav.toggle{
-        display:flex !important;
-        flex-direction:column;
-        margin:15px;
-        background-color:#fdfdff;
-        width:50px;
-        height: 50px;
-    }
-    .nav.toggle span{
-        width: 30px;
-        height:4px;
-        background: #fdfdff;
-        margin-bottom: 5px;
-        border-radius: 2px;
-        transform-origin: 5px 0px;
-        transition:all 0.2s linear;
-    }
-    /*Con la clase open doy animación a las tres rayitas*/
-    .nav_toggle.open > span{ /*primera rayita la mueve 45 grados*/
-        transform:rotate(45deg) translate(0px,0px);
-    }
-    .nav_toggle.open >span:nth-child(2){/*segunda rayita la esconde*/
-        display:none;
-    }
-    .nav_toggle.open > span:nth-child(3){/*tercera rayita la mueve 45 grados hacia el otro lado*/
-        transform:rotate(-45deg) translate (-5px, 1px);
-    }
+.navbar-icon {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.navbar-icon span {
+  display: block;
+  float: right;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu.active {
+  display: flex;
+}
+
+.navbar-item {
+  margin: 0 10px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  align-items: column;
+}
+
+.navbar-link:hover {
+  color: #ddd;
+}
+
+#menu{
+  background-color: #233d6e;
 }

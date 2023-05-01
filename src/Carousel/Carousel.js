@@ -11,15 +11,18 @@ import img3 from "../image/estrategia.png";
         function Slider(){
             return(
                 <Carousel showThumbs={false}>
-                    <div>
-                        <img src={img1} alt="Finanzas"/>
-                    </div>
-                    <div>
-                        <img src={img2} alt="Impuestos"/>
-                    </div>
-                    <div>
-                        <img src={img3} alt="Estrategia"/>
-                    </div>
+                      
+                        <div>
+                            <img src={img1} alt="Finanzas"/>
+                        </div>
+                        <div>
+                            <img src={img2} alt="Impuestos"/>
+                        </div>
+                        <div>
+                            <img src={img3} alt="Estrategia"/>
+                        </div>
+                       
+                    
                 </Carousel>
             );
         }
